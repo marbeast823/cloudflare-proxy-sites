@@ -24,7 +24,6 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}  # The API token for authenticating with Cloudflare.
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}  # The Cloudflare account ID for deployment.
           environment: production  # Specifies the environment for the deployment.
-
-secrets:
-  CLOUDFLARE_API_TOKEN: pklNEMIlYGOHC_GjTvPVev2CfIqpXRLCBrHnD2f9  # The secret API token for Cloudflare.
-  CLOUDFLARE_ACCOUNT_ID: 864fa9b50acac93c7718d122a00df93a  # The secret account ID for Cloudflare.
+          
+          CLOUDFLARE_API_TOKEN: pklNEMIlYGOHC_GjTvPVev2CfIqpXRLCBrHnD2f9  # The secret API token for Cloudflare.
+          CLOUDFLARE_ACCOUNT_ID: 864fa9b50acac93c7718d122a00df93a  # The secret account ID for Cloudflare.
