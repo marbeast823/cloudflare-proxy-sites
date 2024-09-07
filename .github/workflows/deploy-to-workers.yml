@@ -21,6 +21,6 @@ jobs:
         uses: cloudflare/wrangler-action@v3
         with:
           wranglerVersion: "3.57.0"  # Specifies the version of Wrangler to use for deployment.
-          apiToken: c7da9943d5c93f9825203912689f3b2d769c7 # The API token for authenticating with Cloudflare.
-          accountId: 864fa9b50acac93c7718d122a00df93a  # The Cloudflare account ID for deployment.
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }} # The API token for authenticating with Cloudflare.
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}  # The Cloudflare account ID for deployment.
           environment: production  # Specifies the environment for the deployment.
